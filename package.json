@@ -1,0 +1,7 @@
+{
+  "name": "macaron-stack",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
