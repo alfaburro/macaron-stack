@@ -1,5 +1,7 @@
 - name: remix
   type: nodejs:18
+  source:
+    root: remix
   hooks:
     build: |
       set -ex
@@ -15,6 +17,8 @@
 
 - name: feathers
   type: nodejs:18
+  source:
+    root: feathers-basics
   hooks:
     build: |
       set -ex
