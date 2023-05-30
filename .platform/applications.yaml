@@ -1,4 +1,19 @@
-- name: app
+- name: remix
+  type: nodejs:18
+  hooks:
+    build: |
+      set -ex
+      npm install
+      npm run build
+  web:
+    commands:
+      start: |
+        npm run start
+  disk: 512
+  relationships:
+    pgdb: "postgresqldb:postgresql"
+
+- name: feathers
   type: nodejs:18
   hooks:
     build: |
