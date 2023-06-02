@@ -1,5 +1,9 @@
 # macaron-stack
 
+- Fastly Compute@Edge
+- API with Feathers
+- Services: Postgres, MongoDB, ...
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)

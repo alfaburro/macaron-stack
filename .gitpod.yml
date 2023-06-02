@@ -37,5 +37,5 @@ tasks:
         fi
       fi
 
-  - init: npm install
+  - init: cd remix && npm install
     command: npm run dev
