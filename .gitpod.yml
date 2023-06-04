@@ -37,5 +37,11 @@ tasks:
         fi
       fi
 
-  - init: cd remix && npm install
-    command: npm run dev
+  - name: install platform.sh CLI
+    command: curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | bash
+
+  - name: install fastly CLI
+    command: ./fastly-install.sh
+
+  - name: install remix
+    command: cd remix && npm install && npm run dev
