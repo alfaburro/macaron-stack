@@ -44,4 +44,4 @@ tasks:
     command: ./fastly-install.sh
 
   - name: install remix
-    command: cd remix && npm install && npm run dev
+    command: cd remix && npm install
