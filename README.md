@@ -4,6 +4,8 @@
 - API with Feathers
 - Services: Postgres, MongoDB, ...
 
+npx create-remix@latest ./remix --template https://github.com/fastly/remix-compute-js/tree/main/packages/remix-template
+
 # Welcome to Remix!
 
 - [Remix Docs](https://remix.run/docs)
