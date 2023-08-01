@@ -4,12 +4,11 @@
     root: feathers-basics
   hooks:
     build: |
-      set -ex
-      npm install
+      
   web:
     commands:
       start: |
-        npm run start
+        
   disk: 512
   relationships:
     pgdb: "postgresqldb:postgresql"
