@@ -63,7 +63,7 @@ app.on('connection', (connection) => app.channel('everybody').join(connection))
 app.publish((_data) => app.channel('everybody'))
 
 // Start the server
-app.listen(config.port).then(() => console.log('Feathers server listening on localhost:3030'))
+app.listen(config.isValidPlatform() ? config.port : 3030).then(() => console.log('Feathers server listening on localhost:3030'))
 
 // For good measure let's create a message
 // So our API doesn't look so empty
