@@ -1,6 +1,6 @@
 "https://www.{default}/":
     type: upstream
-    upstream: "remix:http"
+    upstream: "feathers:http"
 
 "https://{default}/":
     type: redirect
