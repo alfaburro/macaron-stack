@@ -18,3 +18,7 @@
   variables:
     env:
       FASTLY_API_TOKEN: abcdefghi
+  mounts:
+    '.config/fastly':
+      source: local
+      source_path: fastly
