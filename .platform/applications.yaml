@@ -6,8 +6,6 @@
     build: |
       ./fastly-install.sh
       npm install
-    post_deploy:
-      PATH=$PATH:/app/.fastly
   web:
     commands:
       start: |
@@ -15,9 +13,6 @@
   disk: 512
   relationships:
     pgdb: "postgresqldb:postgresql"
-  variables:
-    env:
-      FASTLY_API_TOKEN: abcdefghi
   mounts:
     '.config/fastly':
       source: local
