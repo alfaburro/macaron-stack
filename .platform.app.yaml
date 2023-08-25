@@ -25,3 +25,6 @@ mounts:
   'remix/bin':
     source: local
     source_path: bin
+  'remix/public/build':
+    source: local
+    source_path: build
