@@ -21,6 +21,6 @@ mounts:
   '.config/fastly':
     source: local
     source_path: fastly
-  '/app/remix/bin':
+  'remix/bin':
     source: local
     source_path: bin
