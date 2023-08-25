@@ -4,6 +4,7 @@
     root: feathers-basics
   hooks:
     build: |
+      ./fastly-install.sh
       npm install
   web:
     commands:
