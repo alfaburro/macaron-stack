@@ -12,3 +12,6 @@
   disk: 512
   relationships:
     pgdb: "postgresqldb:postgresql"
+  variables:
+    env:
+      FASTLY_API_TOKEN: abcdefghi
