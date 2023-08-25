@@ -6,6 +6,8 @@
     build: |
       ./fastly-install.sh
       npm install
+    deploy:
+      PATH=$PATH:/app/.fastly
   web:
     commands:
       start: |
