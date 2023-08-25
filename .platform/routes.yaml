@@ -1,6 +1,6 @@
 "https://www.{default}/":
     type: upstream
-    upstream: "feathers:http"
+    upstream: "macaron-stack:http"
 
 "https://{default}/":
     type: redirect
