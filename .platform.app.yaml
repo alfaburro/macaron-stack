@@ -2,11 +2,10 @@ name: macaron-stack
 type: nodejs:18
 hooks:
   build: |
-    cd feathers-basics
+    cd /app/feathers-basics
     ./fastly-install.sh
     npm install
-    cd ../remix
-    npm install
+    cd /app/remix && npm install
   post_deploy:
     PATH=$PATH:/app/.fastly
 web:
