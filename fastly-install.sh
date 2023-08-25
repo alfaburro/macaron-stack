@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-url="https://github.com/fastly/cli/releases/download/v10.2.4/fastly_v10.2.4_linux-amd64.tar.gz"
+url="https://github.com/fastly/cli/releases/download/v10.3.0/fastly_v10.3.0_linux-amd64.tar.gz"
 tmp_dir=$(mktemp -d)
 tmp_name="fastly-"$(date +"%s")
 curl -fsSL $url > "${tmp_dir}/${tmp_name}.tar.gz"
