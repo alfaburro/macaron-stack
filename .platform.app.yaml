@@ -1,4 +1,4 @@
-name: feathers
+name: macaron-stack
 type: nodejs:18
 hooks:
   build: |
