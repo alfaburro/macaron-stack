@@ -5,8 +5,7 @@
   hooks:
     build: |
       ./fastly-install.sh
-      echo "fastly is installed."
-      bin/fastly whoami
+      npm run build
 - name: feathers
   type: nodejs:18
   source:
