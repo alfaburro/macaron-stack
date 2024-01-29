@@ -1,3 +1,12 @@
+- name: remix
+  type: nodejs:18
+  source:
+    root: remix
+  hooks:
+    build: |
+      ./fastly-install.sh
+      npm install
+      npm run deploy
 - name: feathers
   type: nodejs:18
   source:
@@ -12,7 +21,7 @@
         npx ts-node app.ts
   disk: 512
   relationships:
-    pgdb: "postgresqldb:postgresql"
+    redisdb: "redisservice:redis"
   mounts:
     '.config/fastly':
       source: local
