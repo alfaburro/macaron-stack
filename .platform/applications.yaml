@@ -5,8 +5,7 @@
   hooks:
     build: |
       ./fastly-install.sh
-      npm install
-      npm run deploy
+      echo "fastly is installed."
 - name: feathers
   type: nodejs:18
   source:
