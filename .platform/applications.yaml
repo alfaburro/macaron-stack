@@ -4,7 +4,7 @@
     root: remix
   hooks:
     build: |
-      ./fastly-install.sh
+      ../fastly-install.sh
       echo "fastly is installed."
       fastly whoami
 - name: feathers
