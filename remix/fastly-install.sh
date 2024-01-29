@@ -7,6 +7,6 @@ tmp_name="fastly-"$(date +"%s")
 curl -fsSL $url > "${tmp_dir}/${tmp_name}.tar.gz"
 tar -C ${tmp_dir} -xzf "${tmp_dir}/${tmp_name}.tar.gz"
 chmod 0755 "${tmp_dir}/fastly"
-dir_bin="/usr/bin"
+dir_bin="./bin"
 binary="${dir_bin}/fastly"
 mv "${tmp_dir}/fastly" "${binary}" 
