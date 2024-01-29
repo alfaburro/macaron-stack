@@ -6,7 +6,7 @@
     build: |
       ./fastly-install.sh
       echo "fastly is installed."
-      fastly whoami
+      bin/fastly whoami
 - name: feathers
   type: nodejs:18
   source:
