@@ -8,3 +8,7 @@
       npm install --include=dev
       npm run build
       npm run deploy
+  mounts:
+    '.config':
+      source: tmp
+      source_path: files/.config
