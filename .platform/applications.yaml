@@ -7,11 +7,3 @@
       ./fastly-install.sh
       npm install
       npm run build
-
-- name: remix2
-  type: nodejs:18
-  source:
-    root: remix2
-  hooks:
-    build: |
-      npm install
