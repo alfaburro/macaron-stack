@@ -15,7 +15,6 @@
   "dependencies": {
     "@fastly/remix-server-adapter": "^2.0.0",
     "@fastly/remix-server-runtime": "^2.0.0",
-    "@remix-run/dev": "^1.17.1",
     "@remix-run/react": "^1.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -23,6 +22,7 @@
   "devDependencies": {
     "@fastly/compute-js-static-publish": "^5.0.0",
     "@fastly/js-compute": "^2.0.0",
+    "@remix-run/dev": "^1.17.1",
     "@remix-run/eslint-config": "^1.17.1",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
