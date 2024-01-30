@@ -7,7 +7,7 @@ export function links() {
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Congratulations!</h1>
+      <h1>Congratulations! 2024-01-30</h1>
       <p>
         You’ve successfully created your <a target="_blank" href="https://remix.run/">Remix</a> project for <a target="_blank" href="https://developer.fastly.com/learning/compute/javascript/">Fastly Compute@Edge</a>.
       </p>
