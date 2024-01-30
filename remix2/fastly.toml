@@ -1,0 +1,12 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = []
+description = ""
+language = "javascript"
+manifest_version = 2
+name = "remix-compute-js-app"
+service_id = ""
+
+[scripts]
+build = "npm run build"

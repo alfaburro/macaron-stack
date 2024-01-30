@@ -7,22 +7,11 @@
       ./fastly-install.sh
       npm install
       npm run build
-- name: feathers
+
+- name: remix2
   type: nodejs:18
   source:
-    root: feathers-basics
+    root: remix2
   hooks:
     build: |
-      ./fastly-install.sh
       npm install
-  web:
-    commands:
-      start: |
-        npx ts-node app.ts
-  disk: 512
-  relationships:
-    redisdb: "redisservice:redis"
-  mounts:
-    '.config/fastly':
-      source: local
-      source_path: fastly
