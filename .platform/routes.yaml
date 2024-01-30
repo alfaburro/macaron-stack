@@ -1,7 +1,3 @@
-"https://www.{default}/":
-    type: upstream
-    upstream: "feathers:http"
-
 "https://{default}/":
     type: redirect
     to: "https://www.{default}/"
