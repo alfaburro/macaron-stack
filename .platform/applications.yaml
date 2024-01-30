@@ -5,5 +5,5 @@
   hooks:
     build: |
       ./fastly-install.sh
-      npm install --production=false
+      npm install --include=dev
       npm run build
